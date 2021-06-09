@@ -28,7 +28,7 @@ resource "fakewebservices_server" "servers" {
 }
 
 resource "fakewebservices_load_balancer" "primary_lb" {
-  name    = "Primary Load Balancer 2"
+  name    = "Primary Load Balancer 3"
   servers = fakewebservices_server.servers[*].name
 }
 
